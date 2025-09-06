@@ -1,25 +1,17 @@
-# Kraken DeepSeek Trading Signals
+# Kraken DeepSeek Trading Signal Generator
 
-A Flask application that fetches cryptocurrency candle data from Kraken and uses DeepSeek AI to generate trading signals.
+A Python application that fetches OHLC data from Kraken exchange and generates trading signals using DeepSeek AI.
 
 ## Features
 
-- Fetches 50 candles from Kraken Exchange
-- Uses DeepSeek AI for technical analysis
-- Generates BUY/SELL/HOLD signals with stop prices and targets
-- Supports historical analysis with date parameter
-- Real-time signal generation for current market conditions
+- Fetches 50 OHLC data points from Kraken
+- Generates trading signals (Buy/Sell/Hold) using DeepSeek AI
+- Provides stop loss and target prices
+- Includes reasoning for each signal
 
-## Deployment on Railway
+## Setup
 
-1. Fork this repository
-2. Connect your Railway account to the repository
-3. Add environment variables:
-   - `DEEPSEEK_API_KEY`: Your DeepSeek API key
-   - `KRAKEN_API_KEY`: Optional Kraken API key (for higher rate limits)
-
-4. Deploy!
-
-## API Endpoints
-
-### Get Signals
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/kraken-deepseek-trading.git
+cd kraken-deepseek-trading
